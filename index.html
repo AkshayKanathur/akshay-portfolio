@@ -1,34 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshay R | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic"/>
+    <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Akshay R</h1>
-    <p>Cybersecurity Graduate | Penetration Tester | Ethical Hacker</p>
+    <p>Cybersecurity Graduate | SOC & Penetration Tester | Ethical Hacker</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Motivated Cybersecurity graduate with a BSc in Cyber Forensics, Data Analytics, and Cyber Security (TCS & IBM).
-      Passionate about penetration testing, VAPT, and ethical hacking. Proficient in using tools like Burp Suite, Nmap, Metasploit, and Wireshark.
+      I’m a Cybersecurity graduate passionate about both <strong>Blue Team (SOC Operations)</strong> and <strong>Red Team (VAPT)</strong> practices. 
+      Experienced with <strong>threat detection, incident response,</strong> and <strong>vulnerability assessment</strong> using tools like 
+      Wazuh, Suricata, and Burp Suite. I enjoy blending offensive and defensive security to build smarter defenses.
     </p>
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
     <ul>
-      <li>VAPT & Penetration Testing</li>
-      <li>Python, Bash (Basics)</li>
-      <li>Burp Suite, Wireshark, Nmap, Metasploit</li>
-      <li>Kali Linux, Bettercap, Phishing Tools</li>
+      <li><strong>Blue Team:</strong> SOC Monitoring, SIEM (Wazuh), IDS (Suricata), Event Viewer, UFW, Threat Detection, Incident Response</li>
+      <li><strong>Red Team:</strong> VAPT, Burp Suite, Nmap, Metasploit, Kali Linux, Wireshark</li>
+      <li><strong>Programming & Scripting:</strong> Python, Bash, Node.js, Flask, HTML, CSS, JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="labs">
+    <h2>SOC Practicals & Labs</h2>
+    <ul>
+      <li><strong>File Integrity Monitoring (FIM):</strong> Configured Wazuh FIM to detect unauthorized file modifications and validated alerts in real time.</li>
+      <li><strong>Nmap Scan Detection:</strong> Simulated Nmap scans, captured alerts with Suricata + Wazuh, and performed correlation analysis.</li>
+      <li><strong>SSH Brute Force Detection & Containment:</strong> Simulated SSH brute-force using Hydra, analyzed failed logins in Wazuh, and blocked IPs via UFW.</li>
     </ul>
   </section>
 
@@ -36,15 +44,15 @@
     <h2>Projects</h2>
     <ul>
       <li>
-        <strong>Password Cracking Resistance Analyzer</strong> — Real-time password strength check using "Have I Been Pwned" API.
+        <strong>Password Cracking Resistance Analyzer</strong> — Node.js web app checking password strength using “Have I Been Pwned” API.
         <br><a href="https://github.com/AkshayKanathur/Password_cracking_resistance_analyzer" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>VirusTotal Automation</strong> — Python automation tool using VirusTotal API for scanning.
+        <strong>VirusTotal Automation</strong> — Python tool leveraging VirusTotal API for automated malware & URL scanning.
         <br><a href="https://github.com/AkshayKanathur/VirusTotal-automation" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>Multi-Factor Authentication System</strong> — Flask-based MFA app with HTML/CSS/JS.
+        <strong>Multi-Factor Authentication System</strong> — Flask-based MFA app with front-end integration for login security.
         <br><a href="https://github.com/AkshayKanathur/MFA_System" target="_blank">GitHub</a>
       </li>
     </ul>
@@ -53,16 +61,47 @@
   <section id="experience">
     <h2>Internships</h2>
     <ul>
-      <li><strong>Deltaware Solutions Pvt Ltd</strong> — Text encryption tool (Ongoing, June 2025)</li>
-      <li><strong>EyeQ Dot Net</strong> — Security Analyst (Feb–May 2025), Cybersecurity Intern (Dec 2023–Jan 2024)</li>
+      <li>
+        <strong>Penetration Tester Intern | Deltaware Solutions Pvt Ltd</strong> — Jun 2025 (Ongoing)
+        <br>Developed a CLI encryption tool using multiple algorithms and applied secure coding practices.
+      </li>
+      <li>
+        <strong>Cyber Security Analyst Intern | EyeQ Dot Net</strong> — Feb 2025 – May 2025
+        <br>Monitored systems for suspicious activity, supported incident documentation, and performed risk assessments.
+      </li>
+      <li>
+        <strong>Cyber Security Intern | EyeQ Dot Net</strong> — Dec 2023 – Jan 2024
+        <br>Detected threats in client projects, proposed mitigations, and performed VAPT on DVWA & Metasploitable.
+      </li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BSc in Cyber Forensics, Data Analytics & Cyber Security</strong> — Yenepoya Institute, Mangalore (TCS & IBM, 2023–2025)</li>
+      <li><strong>PUC – Livestock Management (Science)</strong> | G.V.H.S.S Iriyanni (2018–2020)</li>
+      <li><strong>SSLC</strong> | G.V.H.S.S Iriyanni (2015–2017)</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Practical Approach to Cybersecurity — TCS (Jan 2025)</li>
+      <li>Ethical Hacking Fundamentals — Dec 2024</li>
+      <li>Metasploit for Beginners: Ethical Penetration Testing — Nov 2024</li>
+      <li>Building MFA System — Nov 2024</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: akshay.ramesha.vr@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/AkshayKanathur">github.com/AkshayKanathur</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/akshay-r-82253a244">linkedin.com/in/akshay-r-82253a244</a></p>
+    <p>📍 Kerala, Kasaragod</p>
+    <p>📧 Email: <a href="mailto:akshay.ramesha.vr@gmail.com">akshay.ramesha.vr@gmail.com</a></p>
+    <p>📞 Phone: +91 6362724403</p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/akshay-r-82253a244" target="_blank">linkedin.com/in/akshay-r-82253a244</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/AkshayKanathur" target="_blank">github.com/AkshayKanathur</a></p>
   </section>
 
   <footer>
