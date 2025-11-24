@@ -10,33 +10,36 @@
   <header>
     <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Akshay R</h1>
-    <p>Cybersecurity Graduate | SOC & Penetration Tester | Ethical Hacker</p>
+    <p>Blue Team Enthusiast | SOC Analyst | Threat Detection & Incident Response</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m a Cybersecurity graduate passionate about both <strong>Blue Team (SOC Operations)</strong> and <strong>Red Team (VAPT)</strong> practices. 
-      Experienced with <strong>threat detection, incident response,</strong> and <strong>vulnerability assessment</strong> using tools like 
-      Wazuh, Suricata, and Burp Suite. I enjoy blending offensive and defensive security to build smarter defenses.
+      I’m a blue‑team‑focused cybersecurity enthusiast passionate about detecting, analyzing, and defending against cyber threats.
+      I actively build my skills through <strong>SOC monitoring labs, Wazuh & Splunk projects,</strong> and <strong>TryHackMe defensive challenges</strong>.
+      I enjoy exploring how alerts trigger, how attackers behave, and how to strengthen systems using both offense and defense.
     </p>
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
     <ul>
-      <li><strong>Blue Team:</strong> SOC Monitoring, SIEM (Wazuh), IDS (Suricata), Event Viewer, UFW, Threat Detection, Incident Response</li>
-      <li><strong>Red Team:</strong> VAPT, Burp Suite, Nmap, Metasploit, Kali Linux, Wireshark</li>
-      <li><strong>Programming & Scripting:</strong> Python, Bash, Node.js, Flask, HTML, CSS, JavaScript</li>
+      <li><strong>Blue Team (Primary):</strong> SOC Monitoring, SIEM (Wazuh, Splunk), IDS (Suricata), Firewall (UFW), Threat Detection, Incident Response, Wireshark</li>
+      <li><strong>Red Team (Secondary):</strong> Nmap, Burp Suite, Metasploit, Kali Linux, Hydra</li>
+      <li><strong>Programming:</strong> Python scripting, Bash scripting</li>
+      <li><strong>Soft Skills:</strong> Teamwork, Logical Thinking, Communication</li>
     </ul>
   </section>
 
   <section id="labs">
-    <h2>SOC Practicals & Labs</h2>
+    <h2>SOC Labs & Practicals</h2>
     <ul>
-      <li><strong>File Integrity Monitoring (FIM):</strong> Configured Wazuh FIM to detect unauthorized file modifications and validated alerts in real time.</li>
-      <li><strong>Nmap Scan Detection:</strong> Simulated Nmap scans, captured alerts with Suricata + Wazuh, and performed correlation analysis.</li>
-      <li><strong>SSH Brute Force Detection & Containment:</strong> Simulated SSH brute-force using Hydra, analyzed failed logins in Wazuh, and blocked IPs via UFW.</li>
+      <li><strong>Nmap Scan Detection (Wazuh + Suricata):</strong> Built IDS + SIEM detection lab to identify Nmap scans, visualized alerts on Wazuh dashboard.</li>
+      <li><strong>SSH Brute Force Detection (Wazuh):</strong> Simulated brute-force using Hydra; detected multiple failed logins followed by successful compromise.</li>
+      <li><strong>Splunk SSH Log Visualizer:</strong> Built dashboard showing failed/successful logins, geolocation of attackers, and brute-force correlation patterns.</li>
+      <li><strong>Suricata + Splunk Integration:</strong> Analyzed network scan activity and correlated Suricata IDS alerts with UFW firewall logs.</li>
+      <li><strong>File Integrity Monitoring (FIM):</strong> Configured Wazuh FIM to detect unauthorized file modifications.</li>
     </ul>
   </section>
 
@@ -44,78 +47,35 @@
     <h2>Projects</h2>
     <ul>
       <li>
-        <strong>Password Cracking Resistance Analyzer</strong> — Node.js web app checking password strength using “Have I Been Pwned” API.
-        <br><a href="https://github.com/AkshayKanathur/Password_cracking_resistance_analyzer" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <strong>VirusTotal Automation</strong> — Python tool leveraging VirusTotal API for automated malware & URL scanning.
-        <br><a href="https://github.com/AkshayKanathur/VirusTotal-automation" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <strong>Multi-Factor Authentication System</strong> — Flask-based MFA app with front-end integration for login security.
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akshay R | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
-    <h1>Akshay R</h1>
-    <p>Cybersecurity Graduate | SOC Analyst | Penetration Tester | Ethical Hacker</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a <strong>Cybersecurity graduate</strong> passionate about both <strong>Blue Team (SOC Operations)</strong> and 
-      <strong>Red Team (VAPT)</strong> work. Experienced in <strong>threat detection, incident response, log analysis,</strong> 
-      and <strong>vulnerability assessment</strong> using tools like <strong>Wazuh, Suricata, Splunk,</strong> and <strong>Burp Suite</strong>. 
-      I love combining offense and defense to strengthen cyber resilience.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Blue Team:</strong> SOC Monitoring, SIEM (Wazuh, Splunk), IDS (Suricata), Firewall (UFW), Threat Detection, Incident Response</li>
-      <li><strong>Red Team:</strong> VAPT, Burp Suite, Nmap, Metasploit, Kali Linux, Wireshark</li>
-      <li><strong>Programming:</strong> Python, Bash, HTML, CSS, JavaScript</li>
-      <li><strong>Soft Skills:</strong> Teamwork, Leadership, Logical Thinking, Communication</li>
-    </ul>
-  </section>
-
-  <section id="labs">
-    <h2>SOC Practicals & Labs</h2>
-    <ul>
-      <li><strong>SSH Brute Force Detection (Wazuh):</strong> Simulated brute-force using Hydra, detected multiple failed logins followed by success, demonstrating Wazuh’s detection power.</li>
-      <li><strong>Nmap Scan Detection (Wazuh + Suricata):</strong> Detected active scans and correlated events across IDS and SIEM dashboards.</li>
-      <li><strong>Splunk SSH Log Visualizer:</strong> Created dashboard showing failed/successful logins, geolocation mapping, and attacker correlation.</li>
-      <li><strong>Linux Auth Log Analysis (Splunk):</strong> Extracted user activity patterns, event frequency, and login behavior using SPL queries.</li>
-      <li><strong>File Integrity Monitoring (FIM):</strong> Configured Wazuh FIM to detect unauthorized file changes and validated alerts.</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>ImageCrypt</strong> — Python tool for encrypting/decrypting files with metadata embedding and clipboard copy.
+        <strong>ImageCrypt</strong> — Python tool for encrypting/decrypting files with embedded metadata and secure key generation.
         <br><a href="https://github.com/AkshayKanathur/ImageCrypt" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>Password Cracking Resistance Analyzer</strong> — Node.js web app checking password strength using “Have I Been Pwned” API.
+        <strong>SSH Brute‑Force & Nmap Scan Detection (Wazuh + Suricata)</strong> — Simulated recon + brute‑force attacks; detected using Wazuh & Suricata.
+        <br><a href="https://github.com/AkshayKanathur/ssh-bruteforce-nmap-scan-detection-wazuh" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <strong>Splunk Apache Log Visualizer</strong> — Dashboard analyzing Apache logs, detecting anomalies and traffic patterns.
+        <br><a href="https://github.com/AkshayKanathur/Splunk-Apache-Log-Visualizer" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <strong>Nmap Scan Detection (Wazuh + Suricata)</strong> — Dedicated detection lab for identifying reconnaissance traffic.
+        <br><a href="https://github.com/AkshayKanathur/nmap-scan-detection-wazuh" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <strong>Splunk SSH Log Visualizer</strong> — Dashboard for SSH activity analysis, brute‑force patterns & geolocation mapping.
+        <br><a href="https://github.com/AkshayKanathur/splunk-ssh-log-visualizer" target="_blank">GitHub</a>
+      </li>
+      <li>
+        <strong>Password Cracking Resistance Analyzer</strong> — Node.js app checking password breach exposure using Have I Been Pwned.
         <br><a href="https://github.com/AkshayKanathur/Password_cracking_resistance_analyzer" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>VirusTotal Automation</strong> — Python tool automating malware & URL scanning via VirusTotal API.
+        <strong>VirusTotal Automation</strong> — Python tool automating file/URL scanning using VirusTotal API.
         <br><a href="https://github.com/AkshayKanathur/VirusTotal-automation" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>Multi-Factor Authentication System</strong> — Flask-based MFA app enhancing login security.
+        <strong>MFA Authentication System</strong> — Flask-based MFA system enhancing login security.
         <br><a href="https://github.com/AkshayKanathur/MFA_System" target="_blank">GitHub</a>
       </li>
     </ul>
@@ -126,19 +86,19 @@
     <ul>
       <li>
         <strong>SOC Monitoring Intern | CyberSapiens</strong> — Oct 2025 – Present<br>
-        Monitored alerts using Wazuh & Splunk, mapped threats using MITRE ATT&CK, and fine-tuned detection rules.
+        Monitoring alerts using Wazuh and Splunk, performing log analysis, and mapping detections to MITRE ATT&CK.
       </li>
       <li>
         <strong>Penetration Tester Intern | Deltaware Solutions Pvt Ltd</strong> — Jun 2025<br>
-        Led team in developing encryption tool using AES, DES, RSA & Blowfish with secure key generation.
+        Built encryption tool using AES, DES, RSA & Blowfish; collaborated with team for secure key workflows.
       </li>
       <li>
         <strong>Cyber Security Analyst Intern | EyeQ Dot Net</strong> — Feb 2025 – May 2025<br>
-        Conducted Red Team assessments, documented risks, and supported incident response.
+        Performed red‑team assessments, documented risks, and assisted in initial incident response.
       </li>
       <li>
         <strong>Cyber Security Intern | EyeQ Dot Net</strong> — Dec 2023 – Jan 2024<br>
-        Performed VAPT on DVWA & Metasploitable and proposed security improvements.
+        Conducted VAPT on DVWA & Metasploitable, drafted remediation steps.
       </li>
     </ul>
   </section>
@@ -146,9 +106,7 @@
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li><strong>BSc in Cyber Forensics, Data Analytics & Cyber Security</strong> — Yenepoya Institute, Mangalore (TCS & IBM, 2023–2025)</li>
-      <li><strong>PUC – Livestock Management (Science)</strong> | G.V.H.S.S Iriyanni (2018–2020)</li>
-      <li><strong>SSLC</strong> | G.V.H.S.S Iriyanni (2015–2017)</li>
+      <li><strong>BSc in Computer Science</strong> — Yenepoya Institute, Mangalore (2022–2025)<br>79.8% CGPA</li>
     </ul>
   </section>
 
@@ -158,36 +116,12 @@
       <li>Cyber Security Advanced Certificate — IBM</li>
       <li>Foundations of Cybersecurity — Google</li>
       <li>Networking Security — ISC²</li>
-      <li>Practical Approach to Cybersecurity — TCS</li>
-      <li>Metasploit for Beginners: Ethical Penetration Testing — Nov 2024</li>
-      <li>Building MFA System — Nov 2024</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>📍 Kerala, India</p>
-    <p>📧 Email: <a href="mailto:akshay.ramesha.vr@gmail.com">akshay.ramesha.vr@gmail.com</a></p>
-    <p>📞 Phone: +91 6362724403</p>
-    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/akshay-r-82253a244" target="_blank">linkedin.com/in/akshay-r-82253a244</a></p>
-    <p>🐙 GitHub: <a href="https://github.com/AkshayKanathur" target="_blank">github.com/AkshayKanathur</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Akshay R | Cybersecurity Portfolio</p>
-  </footer>
-</body>
-</html>
-
-    <li>Ethical Hacking Fundamentals — Dec 2024</li>
-      <li>Metasploit for Beginners: Ethical Penetration Testing — Nov 2024</li>
-      <li>Building MFA System — Nov 2024</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Kerala, Kasaragod</p>
     <p>📧 Email: <a href="mailto:akshay.ramesha.vr@gmail.com">akshay.ramesha.vr@gmail.com</a></p>
     <p>📞 Phone: +91 6362724403</p>
     <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/akshay-r-82253a244" target="_blank">linkedin.com/in/akshay-r-82253a244</a></p>
