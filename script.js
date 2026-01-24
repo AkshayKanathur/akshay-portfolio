@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
-        
+
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         camera.position.z = 5;
@@ -23,16 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Matrix Particles
         const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 5000; 
+        const particlesCount = 5000;
         const posArray = new Float32Array(particlesCount * 3);
         const velocityArray = new Float32Array(particlesCount);
-        const worldSize = { x: 40, y: 50 }; 
+        const worldSize = { x: 40, y: 50 };
 
-        for(let i = 0; i < particlesCount * 3; i+=3) {
+        for (let i = 0; i < particlesCount * 3; i += 3) {
             posArray[i] = (Math.random() - 0.5) * worldSize.x;
-            posArray[i+1] = (Math.random() - 0.5) * worldSize.y;
-            posArray[i+2] = (Math.random() - 0.5) * worldSize.x;
-            velocityArray[i/3] = Math.random() * 0.05 + 0.02;
+            posArray[i + 1] = (Math.random() - 0.5) * worldSize.y;
+            posArray[i + 2] = (Math.random() - 0.5) * worldSize.x;
+            velocityArray[i / 3] = Math.random() * 0.05 + 0.02;
         }
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(animate);
             const positions = particlesGeometry.attributes.position.array;
             for (let i = 0; i < particlesCount; i++) {
-                positions[i*3 + 1] -= velocityArray[i];
-                if (positions[i*3 + 1] < -worldSize.y / 2) {
-                    positions[i*3 + 1] = worldSize.y / 2;
+                positions[i * 3 + 1] -= velocityArray[i];
+                if (positions[i * 3 + 1] < -worldSize.y / 2) {
+                    positions[i * 3 + 1] = worldSize.y / 2;
                 }
             }
             particlesGeometry.attributes.position.needsUpdate = true;
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 chatWindow.classList.remove('opacity-0', 'scale-95');
                 chatWindow.classList.add('opacity-100', 'scale-100');
             }, 10);
-            if(chatInput) chatInput.focus();
+            if (chatInput) chatInput.focus();
         } else {
             chatWindow.classList.remove('open');
             chatWindow.classList.remove('opacity-100', 'scale-100');
@@ -146,15 +146,15 @@ document.addEventListener('DOMContentLoaded', () => {
             typingDiv.innerHTML = `<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>`;
             messagesContainer.appendChild(typingDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
-            
+
             // Bot Response Delay
             setTimeout(() => {
                 const typingElement = document.getElementById(typingId);
-                if(typingElement) typingElement.remove();
-                
+                if (typingElement) typingElement.remove();
+
                 let response = botBrain["default"];
                 const lowerInput = userText.toLowerCase();
-                
+
                 for (const key in botBrain) {
                     if (lowerInput.includes(key)) {
                         response = botBrain[key];
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 3. UI LOGIC (MOBILE MENU & MODALS)
     // ==========================================
-    
+
     // Mobile Menu
     const mobileMenuBtn = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        if(closeBtn) {
+        if (closeBtn) {
             closeBtn.addEventListener('click', () => certModal.classList.add('hidden'));
         }
         certModal.addEventListener('click', (e) => {
@@ -269,14 +269,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const tvGeo = new THREE.BoxGeometry(4, 3, 0.3);
         const tvMat = new THREE.MeshStandardMaterial({ color: 0x111111 });
         const tvMesh = new THREE.Mesh(tvGeo, tvMat);
-        tvMesh.rotation.y = -0.1; 
+        tvMesh.rotation.y = -0.1;
         tvMesh.position.x = -0.3;
         tvScene.add(tvMesh);
-        
+
         const tvLight = new THREE.DirectionalLight(0xffffff, 1);
         tvLight.position.set(5, 5, 5);
         tvScene.add(tvLight);
-        
+
         function animateTV() {
             requestAnimationFrame(animateTV);
             tvMesh.rotation.y = -0.1 + Math.sin(Date.now() * 0.001) * 0.05; // Gentle float

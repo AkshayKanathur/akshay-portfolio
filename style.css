@@ -32,7 +32,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 255, 65, 0.1);
     /* CRITICAL FIX: Ensure navbar sits on top */
-    z-index: 50; 
+    z-index: 50;
 }
 
 .nav-link {
@@ -63,7 +63,8 @@ body {
     transition: color 0.3s;
 }
 
-.nav-link-mobile:hover, .nav-link-mobile.active {
+.nav-link-mobile:hover,
+.nav-link-mobile.active {
     color: #00ff41;
 }
 
@@ -112,12 +113,22 @@ h3 {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 /* --- CARDS (Glassmorphism) --- */
-.project-card, .timeline-item, .certification-card, .badge-card {
+.project-card,
+.timeline-item,
+.certification-card,
+.badge-card {
     background: rgba(0, 20, 0, 0.6);
     /* FIX: Added webkit prefix */
     -webkit-backdrop-filter: blur(10px);
@@ -130,10 +141,13 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.project-card:hover, .timeline-item:hover, .certification-card:hover, .badge-card:hover {
-     transform: translateY(-5px);
-     box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
-     border-color: rgba(0, 255, 65, 0.5);
+.project-card:hover,
+.timeline-item:hover,
+.certification-card:hover,
+.badge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    border-color: rgba(0, 255, 65, 0.5);
 }
 
 /* --- SKILLS --- */
@@ -173,7 +187,9 @@ h3 {
 }
 
 /* --- TIMELINE & LINKS --- */
-.timeline-item, .project-card, .badge-card {
+.timeline-item,
+.project-card,
+.badge-card {
     margin-bottom: 1.5rem;
 }
 
@@ -207,7 +223,9 @@ h3 {
 }
 
 /* --- BUTTONS --- */
-.view-cert-btn, .project-link, .resume-btn {
+.view-cert-btn,
+.project-link,
+.resume-btn {
     padding: 0.5rem 1rem;
     border: 1px solid #00ff41;
     color: #00ff41;
@@ -221,7 +239,9 @@ h3 {
     font-weight: bold;
 }
 
-.view-cert-btn:hover, .project-link:hover, .resume-btn:hover {
+.view-cert-btn:hover,
+.project-link:hover,
+.resume-btn:hover {
     background-color: #00ff41;
     color: #000;
     box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
@@ -277,7 +297,8 @@ h3 {
 
 .verify-btn:hover {
     background-color: #00ff41;
-    color: #000; /* Black text on green background */
+    color: #000;
+    /* Black text on green background */
     box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
 }
 
@@ -322,7 +343,7 @@ h3 {
     position: relative;
     width: 100%;
     max-width: 700px;
-    aspect-ratio: 4 / 3; 
+    aspect-ratio: 4 / 3;
     margin: 0 auto;
 }
 
@@ -334,14 +355,27 @@ h3 {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    h3 { font-size: 2rem; }
-    .typing-cursor { height: 1.875rem; }
-    .content-section { padding-top: 6rem; }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .typing-cursor {
+        height: 1.875rem;
+    }
+
+    .content-section {
+        padding-top: 6rem;
+    }
 }
 
 @media (min-width: 768px) {
-    .typing-cursor { height: 2.25rem; }
+    .typing-cursor {
+        height: 2.25rem;
+    }
 }
 
 /* --- CHATBOT STYLES --- */
@@ -350,9 +384,11 @@ h3 {
 #chat-messages::-webkit-scrollbar {
     width: 6px;
 }
+
 #chat-messages::-webkit-scrollbar-track {
     background: #001100;
 }
+
 #chat-messages::-webkit-scrollbar-thumb {
     background: #00ff41;
     border-radius: 3px;
@@ -404,10 +440,24 @@ h3 {
     animation: typing 1.4s infinite ease-in-out both;
     margin: 0 1px;
 }
-.typing-dot:nth-child(1) { animation-delay: -0.32s; }
-.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+.typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
 
 @keyframes typing {
-    0%, 80%, 100% { transform: scale(0); }
-    40% { transform: scale(1); }
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
 }
